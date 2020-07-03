@@ -1,0 +1,20 @@
+.navBar{
+    margin: 0 100px;
+    background-color: #3b3a3a;
+    height: 15%;
+}
+
+button{
+    padding: 3px;
+    color: white;
+    font-size: medium;
+    font-family: monospace,Verdana,Courier;
+    background-color: #3b3a3a;
+    margin: 48px 25px;
+    border: none;
+    float: left;
+}
+
+button:hover{
+    cursor: pointer;
+}
