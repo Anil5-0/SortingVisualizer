@@ -11,14 +11,15 @@ function partition(array,low,high,animations){
     let i=low-1;
     for(let j=low;j<=high-1;j++){
         if(array[j]<=pivot){
-            animations.push([-1,j,high]);
+            animations.push([-1,j,high,"red"]);
+            animations.push([-1,j,high,"turquoise"]);
             i++;
             [array[i],array[j]] = [array[j],array[i]];
-            animations.push([-2,i,j]);
+            animations.push([-2,i,j,"turquoise"]);
         }
     }
     [array[i+1],array[high]] = [array[high],array[i+1]];
-    animations.push([-2,i+1,high]);
+    animations.push([-2,i+1,high,"turquoise"]);
     return (i+1);
 }
 

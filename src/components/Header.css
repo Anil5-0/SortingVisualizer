@@ -1,20 +1,39 @@
 .navBar{
     margin: 0 100px;
     background-color: #3b3a3a;
-    height: 15%;
+    height: 14%;
+    overflow: hidden;
 }
 
 button{
-    padding: 3px;
+    padding: 2px;
     color: white;
     font-size: medium;
     font-family: monospace,Verdana,Courier;
     background-color: #3b3a3a;
-    margin: 48px 25px;
+    margin: 48px 18px;
     border: none;
     float: left;
 }
 
 button:hover{
     cursor: pointer;
+    color: blue;
+}
+
+
+label{
+    padding: 2px;
+    margin: 48px 0px 48px 18px;
+    color: white;
+    font-size: medium;
+    font-family: monospace,Verdana,Courier;
+    background-color: #3b3a3a;
+    float: left;    
+}
+
+#speed{
+    direction: rtl;
+    display: inline;
+    margin: 48px 40px 48px 0px;
 }

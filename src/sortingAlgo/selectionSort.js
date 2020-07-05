@@ -9,13 +9,14 @@ function selectionSortHelper(array,animations){
     for(let i=0;i<array.length-1;i++){
         let minIdx = i;
         for(let j=i+1;j<array.length;j++){
-            animations.push([i,j]);
+            animations.push([i,j,"red"]);
+            animations.push([i,j,"turquoise"]);
             if(array[j]<array[minIdx])
                 minIdx = j;
         }
         // Single Line Swap
         [array[i],array[minIdx]] = [array[minIdx],array[i]];
-        animations.push([-1,-1]);
-        animations.push([i,minIdx]);
+        animations.push([-1,-1,"red"]);
+        animations.push([i,minIdx,"purple"]);  
     }
 }
